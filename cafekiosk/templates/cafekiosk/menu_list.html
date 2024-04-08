@@ -1,0 +1,10 @@
+<h1>Menu List</h1>
+
+<br>
+
+<ul class="list-group">
+    {% for Menu in menus %}
+    <li class="list-group-item"><a href="{% url 'cafekiosk:detail' menu.id %}">{{ menu.menu_name }}</a></li>
+
+    {% endfor %}
+</ul>
